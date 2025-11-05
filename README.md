@@ -6,6 +6,6 @@ AlgoDect is a command line math based AI detector that uses text splitting, char
 Clone the repo and install
 
 ```language
-$ git clone https://github.com/gamefox229/AlgoDect
-$ cd algodect
-$ pip install .
+git clone https://github.com/gamefox229/AlgoDect
+cd algodect
+pip install .
