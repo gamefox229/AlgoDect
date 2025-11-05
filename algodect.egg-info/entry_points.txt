@@ -1,0 +1,2 @@
+[console_scripts]
+algodect = algodect.main:main

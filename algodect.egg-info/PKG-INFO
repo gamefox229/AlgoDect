@@ -1,3 +1,11 @@
+Metadata-Version: 2.4
+Name: algodect
+Version: 0.1.0
+Summary: AlgoDect: Human vs AI text detector CLI tool
+Author: Logan Thomas
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
 # AlgoDect
 
 AlgoDect is a math based AI detector that uses text splitting, character count, word count, and punctuation count to determine if the provided text has a cadence that is either human or AI generated.

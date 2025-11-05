@@ -1,0 +1,15 @@
+[project]
+	name = "algodect"
+	version = "0.1.0"
+	description = "AlgoDect: Human vs AI text detector CLI tool"
+	authors = [{name="Logan Thomas"}]
+	readme = "README.md"
+	requires-python = ">=3.8"
+	
+	[tool.setuptools.packages.find]
+		where = ["."]
+		exclude = ["data", "AlgoDect_data"]
+		
+		[project.scripts]
+			algodect = "algodect.main:main"
+			

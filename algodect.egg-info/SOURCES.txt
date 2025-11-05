@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+algodect/__init__.py
+algodect/main.py
+algodect.egg-info/PKG-INFO
+algodect.egg-info/SOURCES.txt
+algodect.egg-info/dependency_links.txt
+algodect.egg-info/entry_points.txt
+algodect.egg-info/top_level.txt
