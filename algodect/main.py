@@ -53,10 +53,11 @@ def similarity_score(f1, f2):
     avg_diff = sum(diffs) / len(diffs)
     return 1 / (1 + avg_diff)
 
-
 def predict(s):
+    print(f"[DEBUG] Predict called with: {s}")
     features = parse_features(s)
     if features is None:
+        print("[DEBUG] Failed to parse features")
         return None
     best_score = -1
     best_label = None
@@ -94,15 +95,13 @@ def main():
         print(f"Extracted features: {numeric_string}")
         guess = predict(numeric_string)
         if guess is None:
-            print("Not enough data.")
+            print("No extracted features")
         else:
             print(f"Result: {guess.upper()}")
         if numeric_string not in memory:
             memory[numeric_string] = "unknown"
             with open(MEMORY_FILE, "w") as f:
                 json.dump(memory, f)
-            print("Memory updated.")
-
 
 if __name__ == "__main__":
     main()
