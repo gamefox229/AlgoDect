@@ -54,10 +54,8 @@ def similarity_score(f1, f2):
     return 1 / (1 + avg_diff)
 
 def predict(s):
-    print(f"[DEBUG] Predict called with: {s}")
     features = parse_features(s)
     if features is None:
-        print("[DEBUG] Failed to parse features")
         return None
     best_score = -1
     best_label = None
@@ -92,7 +90,6 @@ def main():
         if raw_text.lower().strip() == "quit":
             break
         numeric_string = analyze_text(raw_text)
-        print(f"Extracted features: {numeric_string}")
         guess = predict(numeric_string)
         if guess is None:
             print("No extracted features")
